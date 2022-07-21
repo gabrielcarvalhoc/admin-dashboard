@@ -59,8 +59,82 @@
   text-decoration: underline;
 }
 
+.header {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  align-items: center;
+  padding: 15px 3vw;
+  row-gap: 10px;
+}
+.header .search-bar {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.header .search-bar #search {
+  width: 75%;
+  height: 30px;
+  background-color: #ececec;
+  border: none;
+  outline: none;
+  border-radius: 25px;
+  padding: 0 15px;
+}
+.header .icons {
+  display: flex;
+  align-items: center;
+  justify-self: end;
+  gap: 25px;
+}
+.header .icons a {
+  text-decoration: none;
+  color: #000;
+}
+.header .icons img {
+  width: 40px;
+  height: 40px;
+}
+.header .icons p {
+  font-weight: 600;
+}
+.header .info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.header .info img {
+  width: 60px;
+}
+.header .info div p:nth-child(1) {
+  font-weight: 600;
+  font-size: 12px;
+  padding-bottom: 5px;
+}
+.header .info div p:nth-child(2) {
+  font-weight: 700;
+  font-size: 18px;
+}
+.header .buttons {
+  display: flex;
+  justify-self: end;
+  gap: 25px;
+}
+.header .buttons a {
+  text-decoration: none;
+}
+.header .buttons a button {
+  cursor: pointer;
+  background-color: #ce973e;
+  padding: 8px 25px;
+  border: none;
+  border-radius: 25px;
+  color: #fff;
+  font-weight: 600;
+}
+
 .main {
-  background-color: #f3f3f3;
+  background-color: #ececec;
   box-shadow: 0 5px 5px #d6d6d6 inset;
 }
 
