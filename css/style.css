@@ -177,6 +177,10 @@ body {
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 5px 5px 5px #d6d6d6;
+  transition: all 0.25s ease;
+}
+.main .projects .projects-cards .project-card:hover {
+  transform: translateY(-1.5%);
 }
 .main .projects .projects-cards .project-card .project-border {
   grid-row: 1/3;
